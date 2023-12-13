@@ -8,9 +8,9 @@
 	<meta name="robots" content="index, follow">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?6363">
-	<link rel="stylesheet" type="text/css" href="style.css?2847">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?3604">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1889">
+	<link rel="stylesheet" type="text/css" href="style.css?7497">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?4256">
 	
     <title>Home</title>
 
@@ -42,28 +42,86 @@
 	<div class="container">
 		<div class="row">
 			<div class="col text-lg-center">
-				<h1 class="h1-style tc-1415 lg-shadow animated vanishIn none btn-resize-mode mx-auto d-block text-lg-center animDelay06" data-appear-anim-style="vanishIn" data-scroll-fx-delay="0">
+				<h1 class="h1-style tc-1415 lg-shadow animated vanishIn none btn-resize-mode mx-auto d-block text-lg-center animDelay06" data-appear-anim-style="vanishIn" data-scroll-fx-delay="0" id="title">
 					Boykisser Incorperated
 				</h1>
-				<h3 class="mg-md text-center hero-subheader tc-2019 text-w-lg mx-auto d-block animated vanishIn none animDelay1" data-appear-anim-style="vanishIn">
+				<h3 class="mg-md text-center hero-subheader tc-2019 text-w-lg mx-auto d-block animated vanishIn none animDelay1" data-appear-anim-style="vanishIn" id="subtitle">
 					Kissin’ Boys Since 1984
 				</h3>
 			</div>
 		</div>
 	</div>
 	<div class="container fill-bloc-bottom-edge">
-		<div class="row mb-lg-5 pb-lg-5 nonein ">
+		<div class="row mb-lg-2 animated fadeIn" data-appear-anim-style="fadeIn">
+			<div class="col">
+				<div class="card card-rd object-hidden bgc-7011" id="whispocard">
+					<div class="card-header">
+						<h3 class="mg-clear">
+							Card heading
+						</h3>
+					</div>
+					<div class="card-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-rd object-hidden bgc-1415" id="shoddycard">
+					<div class="card-header">
+						<h3 class="mg-clear">
+							Card heading
+						</h3>
+					</div>
+					<div class="card-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-rd object-hidden " id="retrocard">
+					<div class="card-header">
+						<h3 class="mg-clear">
+							Card heading
+						</h3>
+					</div>
+					<div class="card-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-rd object-hidden" id="charmcard">
+					<div class="card-header">
+						<h3 class="mg-clear">
+							Card heading
+						</h3>
+					</div>
+					<div class="card-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-lg-5 pb-lg-5 nonein">
 			<div class="col animated fadeInUp animSpeedLazy animDelay2" data-appear-anim-style="fadeInUp">
-				<img src="img/lazyload-ph.png" data-src="img/WHIPO.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Whipo" width="256" height="256">
+				<a href="#" data-toggle-visibility="whispocard"><img src="img/lazyload-ph.png" data-src="img/WHIPO.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Whipo" id="whispo" width="256" height="256"></a>
 			</div>
 			<div class="col animated animSpeedLazy animDelay2 fadeInUp" data-appear-anim-style="fadeInUp">
-				<img src="img/lazyload-ph.png" data-src="img/SHOD.webp" class="img-fluid img-protected rounded-circle mx-auto d-block img-style animated pulse-hvr lazyload" alt="Shoddy" width="256" height="256">
+				<a href="#" data-toggle-visibility="shoddycard"><img src="img/lazyload-ph.png" data-src="img/SHOD.webp" class="img-fluid img-protected rounded-circle mx-auto d-block img-style animated pulse-hvr lazyload" alt="Shoddy" id="shoddy" width="256" height="256"></a>
 			</div>
 			<div class="col animated fadeInUp animSpeedLazy animDelay2" data-appear-anim-style="fadeInUp">
-				<img src="img/lazyload-ph.png" data-src="img/REETRO.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Retro" width="256" height="256">
+				<a href="#" data-toggle-visibility="retrocard"><img src="img/lazyload-ph.png" data-src="img/REETRO.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Retro" id="retro" width="256" height="256"></a>
 			</div>
 			<div class="col animDelay2 animSpeedLazy animated fadeInUp" data-appear-anim-style="fadeInUp">
-				<img src="img/lazyload-ph.png" data-src="img/CHORM.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Charm" width="256" height="256">
+				<a href="#" data-toggle-visibility="charmcard"><img src="img/lazyload-ph.png" data-src="img/CHORM.webp" class="img-fluid img-protected rounded-circle mx-auto d-block animated pulse-hvr lazyload" alt="Charm" id="charm" width="256" height="256"></a>
 			</div>
 		</div>
 	</div>
@@ -81,10 +139,10 @@
 
 
 <!-- Additional JS -->
-<script src="./js/bootstrap.bundle.min.js?1023"></script>
-<script src="./js/blocs.min.js?4978"></script>
+<script src="./js/bootstrap.bundle.min.js?7588"></script>
+<script src="./js/blocs.min.js?99"></script>
 <script src="./js/lazysizes.min.js" defer></script>
-<script src="./js/scrollFX.js?3725"></script>
+<script src="./js/scrollFX.js?1934"></script>
 <!-- Additional JS END -->
 
 

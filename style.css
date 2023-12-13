@@ -189,6 +189,9 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -226,6 +229,8 @@ button{
 }
 
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -287,6 +292,25 @@ button{
 	stroke-width: 2px;
 	fill-rule: evenodd;
 	stroke-linecap:round;
+}
+
+/* Toggle Visibility */
+.toggled-item{
+	transition: height 350ms ease-in-out, padding 350ms ease-in-out, opacity 350ms ease-in-out;
+	overflow: hidden;
+}
+.toggled-item-hidden{
+	padding-top:0!important;
+	padding-bottom:0!important;
+	border-top:0!important;
+	border-bottom:0!important;
+	outline:0!important;
+	opacity: 0;
+}
+
+/* Hide Object */
+.object-hidden{
+	display:none;
 }
 
 /* = Custom Styling
@@ -370,9 +394,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-1792:#FFFFFF;
 	
+	--swatch-var-7011:#FF67FF;
+	
 }
 
 
+/* Background colour styles */
+
+.bgc-7011{
+	background-color:var(--swatch-var-7011);
+}
+.bgc-1415{
+	background-color:var(--swatch-var-1415);
+}
 
 /* Text colour styles */
 
