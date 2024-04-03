@@ -1,5 +1,45 @@
 <!DOCTYPE html>
 <html>
+    <div class="loadingScreen">
+        <img id="load1" src="images/background.png">
+        <div id="load2" class="loadingThingy"></div>
+    </div>
+
+    <script>
+        function delay(milliseconds){
+            return new Promise(resolve => {
+                setTimeout(resolve, milliseconds);
+            });
+        }
+
+        async function discordWidget() {
+        const widget = document.getElementById("discord")
+
+        if (widget.style.display == "block"){
+            while (Number(widget.style.opacity) > 0) {
+                await delay(5)
+                widget.style.opacity = String(Number(widget.style.opacity)-0.035);
+            }
+            widget.style.display = "none";
+        }
+
+        else {
+            widget.style.display = "block";
+            while (Number(widget.style.opacity) < 1) {
+                await delay(5)
+                widget.style.opacity = String(Number(widget.style.opacity)+0.035);
+            }
+        }}
+        async function fade(id, speed) {
+            const element = document.getElementById(id)
+            element.style.opacity = "1.0"
+            while (Number(element.style.opacity) > 0) {
+                await delay(speed)
+                element.style.opacity = String(Number(element.style.opacity)-0.05)
+            }
+            element.style.display = "none";
+        }
+    </script>
 <head>
 
     <link rel="stylesheet" href="style.css" />
@@ -12,10 +52,13 @@
     <link rel="icon" type="image/x-icon" href="images/background.png">
 
 </head>
-<body>
-
+<body onload="fade('load1', 50); fade('load2', 50)">
     <div class="background">
-        <image class="backgroundImage" src="images/background.png">
+        <img class="backgroundImage" src="images/background.png">
+    </div>
+
+    <div class = "discordWidget">
+        <iframe id="discord" style="display: none; opacity: 0.0;"src="https://discord.com/widget?id=775089174226534421&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
 
     <header>
@@ -24,12 +67,12 @@
         </div>
         <div class="section2">
             <ul class="nav noSelect">
-                <li><a class="lightHeader">Map</a></li>
-                <li><a class="lightHeader">Projects</a></li>
-                <li><a class="lightHeader">Lore</a></li>
-                <li><a class="lightHeader">Blog/Updates</a></li>
-                <li><a class="lightHeader">Join Amar</a></li>
-                <li><a class="lightHeader">About</a></li>
+                <li><a>Map</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Lore</a></li>
+                <li><a>Blog/Updates</a></li>
+                <li><a onclick="discordWidget()">Join Amar</a></li>
+                <li><a>About</a></li>
             </ul>
         </div>
         <div class="section3">
