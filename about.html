@@ -2,29 +2,25 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="style.css" />
         <script src="scripts.js"></script>
+        <link rel="stylesheet" href="style.css" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-
+    
         <meta name="description" content="Silly Little Amar Website!">
-        <title>The Amarchive</title>
+        <title>The Amarchive - About</title>
 
     </head>
 
-    <div class="loadingScreen" id="load" style="background-image: url(images/background.png);">
-        <div class="loadingThingy"></div>
-    </div>
-
-    <body onload="fade('load', 0);" background="images/background.png" style="background-position-x: center;">
+    <body background="images/background.png" style="background-position-x: center;">
         <div class = "discordWidget">
             <iframe id="discord" style="display: none; opacity: 0.0;"src="https://discord.com/widget?id=775089174226534421&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
 
         <header>
             <div class="section1">
-                <a class="amarTitle noSelect" style="cursor: default;">The Amarchive</a>
+                <a class="amarTitle noSelect" href="index.html">The Amarchive</a>
             </div>
 
             <div class="section2">
@@ -34,7 +30,7 @@
                     <a>Lore</a>
                     <a>Blog/Updates</a>
                     <a onclick="discordWidget()">Join Amar</a>
-                    <a href="about.html">About</a>
+                    <a style="color:lightsteelblue" href="index.html">About</a>
                 </nav>
             </div>
 
@@ -42,6 +38,17 @@
                 <image class="userPfp noSelect" src="images/user.png">
             </div>
         </header>
-
+        <main class="about">
+            <div class="aboutLeft">
+                <div class="aboutChipsLeft topLeftChip"></div>
+                <div class="aboutChipsLeft middleLeftChip"></div>
+                <div class="aboutChipsLeft bottomLeftChip"></div>
+            </div>
+            <div class="aboutRight">
+                <div class="aboutChipsRight topRightChip"></div>
+                <div class="aboutChipsRight middleRightChip"></div>
+                <div class="aboutChipsRight bottomRightChip"></div>
+            </div>
+        </main>
     </body>
 </html>

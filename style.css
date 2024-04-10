@@ -10,6 +10,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -17,13 +18,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.background .backgroundImage {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .discordWidget {
@@ -51,8 +45,7 @@ header {
     display: flex;
 
     padding: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-inline: 24px;
 }
 
 header .section1 {
@@ -63,8 +56,8 @@ header .section1 {
 
 header .amarTitle {
     font-size: 1.4em;
-    color: steelblue;
-    cursor: pointer;
+    color: #4682b4;
+    font-weight: bold;
 }
 
 header .section2 {
@@ -76,16 +69,14 @@ header .section2 {
 
 header .nav {
     font-size: 1.2em;
-    color: rgb(84, 139, 185);
-    display: flex;
-    list-style: none;
     text-wrap: nowrap;
 }
 
-header .nav li {
-    margin-left: 16px;
-    margin-right: 16px;
+header a {
+    margin-inline: 16px;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(84, 139, 185);
 }
 
 header .section3 {
@@ -119,10 +110,69 @@ header .section3 {
     100% { transform: rotate(360deg); }
   }
 
-.loadingScreen img {
+.loadingScreen {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 42069;
-    object-fit: cover;
+}
+
+.about {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 60px);
+    top: 60px;
+}
+
+.aboutLeft {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-right: 20%;
+}
+
+.aboutRight {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 20%;
+
+}
+
+.aboutChipsRight {
+    background: linear-gradient(to right, rgb(0, 0, 0, 0) 10%, rgb(0, 0, 0, 0.8) 25%, rgb(0, 0, 0, 0.8) 100%) content-box,
+                linear-gradient(to right, rgb(70, 130, 180, 0) 10%, rgb(70, 130, 180, 0.8) 40%, rgb(70, 130, 180, 0.8) 100%) border-box;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: 100%;
+}
+.aboutChipsLeft {
+    background: linear-gradient(to left, rgb(0, 0, 0, 0) 10%, rgb(0, 0, 0, 0.8) 25%, rgb(0, 0, 0, 0.8) 100%) content-box,
+                linear-gradient(to left, rgb(70, 130, 180, 0) 10%, rgb(70, 130, 180, 0.8) 40%, rgb(70, 130, 180, 0.8) 100%) border-box;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.middleLeftChip {
+    background: linear-gradient(to left, rgb(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.8) 22.5%, rgb(0, 0, 0, 0.8) 100%) content-box,
+                linear-gradient(to left, rgb(70, 130, 180, 0) 10%, rgb(70, 130, 180, 0.8) 40%, rgb(70, 130, 180, 0.8) 100%) border-box;
+}
+
+.middleRightChip {
+    background: linear-gradient(to right, rgb(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.8) 22.5%, rgb(0, 0, 0, 0.8) 100%) content-box,
+                linear-gradient(to right, rgb(70, 130, 180, 0) 10%, rgb(70, 130, 180, 0.8) 40%, rgb(70, 130, 180, 0.8) 100%) border-box;
+
+}
+
+.topLeftChip {
+    border-top: 4px solid transparent;
+}
+
+.topRightChip {
+    border-top: 4px solid transparent;
 }
