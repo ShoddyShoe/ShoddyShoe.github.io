@@ -1,47 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <meta name="The Amarchive" content="Silly Little Amar Website!">
+  <title>The Amarchive</title>
+</head>
 
-        <link rel="stylesheet" href="style.css" />
-        <script src="scripts.js"></script>
+<div id="menu">
+  <div id="menu-items">
+    <a class="menu-item">Map</a>
+    <a class="menu-item">Lore</a>
+    <a class="menu-item">About</a>
+    <a class="menu-item" href="https://discord.gg/fz2QkUx36b" target="_blank">Join Amar</a>
+    <a class="menu-item">Blog/Updates</a>
+  </div>
+  <div id="menu-background-pattern"></div>
+  <div id="menu-background-image"></div>
+</div>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-
-        <meta name="description" content="Silly Little Amar Website!">
-        <title>The Amarchive</title>
-
-    </head>
-
-    <div class="loadingScreen" id="load" style="background-image: url(images/background.png);">
-        <div class="loadingThingy"></div>
-    </div>
-
-    <body onload="fade('load', 0);" background="images/background.png" style="background-position-x: center;">
-        <div class = "discordWidget">
-            <iframe id="discord" style="display: none; opacity: 0.0;"src="https://discord.com/widget?id=775089174226534421&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-
-        <header>
-            <div class="section1">
-                <a class="amarTitle noSelect" style="cursor: default;">The Amarchive</a>
-            </div>
-
-            <div class="section2">
-                <nav class="nav noSelect">
-                    <a>Map</a>
-                    <a>Projects</a>
-                    <a>Lore</a>
-                    <a>Blog/Updates</a>
-                    <a onclick="discordWidget()">Join Amar</a>
-                    <a href="about.html">About</a>
-                </nav>
-            </div>
-
-            <div class="section3">
-                <image class="userPfp noSelect" src="images/user.png">
-            </div>
-        </header>
-
-    </body>
-</html>
+<script src="script.js"></script>
