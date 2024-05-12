@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Monocraft';
-  src: url("./Monocraft.ttf");
+  src: url("fonts/Monocraft.ttf");
 }
 
 body {
@@ -114,6 +114,20 @@ body {
   opacity: 1; 
 }
 
+#BlogButton {
+  padding-top: 15px;
+}
+
+.fade {
+  opacity: 0;
+  font-size: clamp(1rem, 3vw, 3rem);
+  transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.menu-item:hover .fade {
+  opacity: 1;
+}
+
 .menu-item {
   color: white;
   cursor: pointer;
@@ -124,3 +138,8 @@ body {
   text-decoration: none;
   transition: opacity 400ms ease;
 }
+
+.comingSoon {
+  color: rgba(255, 255, 255, 0.4)
+}
+
