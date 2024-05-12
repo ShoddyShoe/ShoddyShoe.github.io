@@ -83,12 +83,10 @@ body {
 #menu-background-image {
   background-image: url("background.png");
   background-position: center 40%;
-  background-size: 110vmax;
+  background-size: cover;
   height: 100%;
-  left: 0px;  
   opacity: 0.35;
   position: absolute;
-  top: 0px;
   transition: opacity 800ms ease,
     background-size 800ms ease,
     background-position 800ms ease;
