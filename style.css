@@ -42,23 +42,23 @@ body {
 }
 
 #menu[data-active-index="0"] > #menu-background-image {
-  background-position: center 45%;
+  background-position: 0% 45%;
 }
 
 #menu[data-active-index="1"] > #menu-background-image {
-  background-position: center 50%;
+  background-position: 0% 50%;
 }
 
 #menu[data-active-index="2"] > #menu-background-image {
-  background-position: center 55%;
+  background-position: 0% 55%;
 }
 
 #menu[data-active-index="3"] > #menu-background-image {
-  background-position: center 60%;
+  background-position: 0% 60%;
 }
 
 #menu[data-active-index="4"] > #menu-background-image {
-  background-position: center 65%;
+  background-position: 0% 65%;
 }
 
 #menu-background-pattern {
