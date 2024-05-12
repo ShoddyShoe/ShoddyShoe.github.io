@@ -6,11 +6,18 @@
 
 <div id="menu">
   <div id="menu-items">
-    <a id="trigger" class="menu-item comingSoon">Map<span class="fade"> - Coming Soon</span></a>
+    <a class="menu-item comingSoon">Map<span class="fade"> - Coming Soon</span></a>
     <a class="menu-item comingSoon">Lore<span class="fade"> - Coming Soon</span></a>
-    <a class="menu-item comingSoon">About<span class="fade"> - Coming Soon</span></a>
+    <a class="menu-item" onclick="aboutPageTransition()">About</a>
     <a class="menu-item" href="https://discord.gg/fz2QkUx36b" target="_blank">Join Amar</a>
     <a class="menu-item comingSoon">Blog/Updates<span class="fade"> - Coming Soon</span></a>
+  </div>
+  <div id="aboutPage" style="position: absolute; left: 0vw; top: 50vh;">
+    <img draggable="false" src="images/Arrow.png" id="arrow" onclick="glideBack();">
+    <div class="card Avatar"><img draggable="false" src="https://s.namemc.com/3d/skin/body.png?id=40987c9f54e769a6&model=classic&theta=23&phi=1&time=90&width=300&height=400" class="character"></div>    
+    <div class="card Avatar"><img draggable="false" src="https://s.namemc.com/3d/skin/body.png?id=9aeed3700af1cde0&model=slim&theta=23&phi=1&time=90&width=300&height=400" class="character"></div>
+    <div class="card Avatar"><img draggable="false" src="https://s.namemc.com/3d/skin/body.png?id=4383d2ae37f19057&model=classic&theta=23&phi=1&time=90&width=300&height=400" class="character"></div>
+    <div class="card Avatar"><img draggable="false" src="https://s.namemc.com/3d/skin/body.png?id=0541fd9989da5c4f&model=classic&theta=23&phi=1&time=90&width=300&height=400" class="character"></div>
   </div>
   <div id="menu-background-pattern"></div>
   <div id="menu-background-image"></div>
